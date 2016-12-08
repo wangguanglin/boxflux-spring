@@ -1,0 +1,14 @@
+#忽略文件
+.project
+/boxflux-discovery/.setting/
+/boxflux-discovery/target/
+/boxflux-discovery/.classpath
+/boxflux-discovery/.project
+/boxflux-movie/.setting/
+/boxflux-movie/target/
+/boxflux-movie/.classpath
+/boxflux-movie/.project
+/boxflux-user/.setting/
+/boxflux-user/target/
+/boxflux-user/.classpath
+/boxflux-user/.project
