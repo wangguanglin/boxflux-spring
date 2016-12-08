@@ -12,3 +12,6 @@
 /boxflux-user/target/
 /boxflux-user/.classpath
 /boxflux-user/.project
+/boxflux-discovery/.settings
+/boxflux-movie/.settings
+/boxflux-user/.settings

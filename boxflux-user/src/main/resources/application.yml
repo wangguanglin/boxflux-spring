@@ -1,0 +1,36 @@
+server:
+  port: 7900
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://mysql:3306/boxflux
+    username: boxflux
+    password: wgl12wgl
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: micservice-user
+logging:
+  level:
+    root: info
+    com.boxflux.micservice: debug
+eureka:
+  client:
+    healthcheck: 
+      enabled: true
+    serviceUrl:
+      defaultZone: http://192.168.63.132:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+info:
+  build:
+    artifact: project.artifactId
+    name: project.name
+    description: project.description
+    version: project.version
+    
+    
